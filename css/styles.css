@@ -88,7 +88,7 @@ ul { list-style: none; }
 .navbar .container { display: flex; align-items: center; justify-content: space-between; }
 .nav-logo { display: flex; align-items: center; }
 .nav-logo img { 
-  height: 50px; 
+  height: 55px; 
   width: auto; 
   border-radius: var(--radius-md); 
   filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.2)); 
