@@ -74,15 +74,16 @@ ul { list-style: none; }
 .navbar {
   position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
   padding: 0.6rem 0; 
-  background: rgba(15,23,42,0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(51,65,85,0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   transition: all var(--transition-normal);
 }
 .navbar.scrolled {
-  background: rgba(15,23,42,0.95);
-  border-bottom: 1px solid rgba(37,99,235,0.3);
+  background: var(--white);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 .navbar .container { display: flex; align-items: center; justify-content: space-between; }
 .nav-logo { display: flex; align-items: center; }
@@ -94,7 +95,7 @@ ul { list-style: none; }
 }
 .nav-links { display: flex; align-items: center; gap: 2rem; }
 .nav-links a {
-  font-size: 0.95rem; font-weight: 500; color: var(--gray-400);
+  font-size: 0.95rem; font-weight: 500; color: var(--gray-600);
   position: relative; padding: 0.25rem 0; transition: color var(--transition-fast);
 }
 .nav-links a::after {
@@ -102,7 +103,7 @@ ul { list-style: none; }
   background: var(--gradient-primary); border-radius: 1px;
   transition: width var(--transition-normal);
 }
-.nav-links a:hover, .nav-links a.active { color: var(--white); }
+.nav-links a:hover, .nav-links a.active { color: var(--primary); }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 .nav-cta {
   padding: 0.6rem 1.5rem !important; background: var(--gradient-primary);
@@ -113,7 +114,7 @@ ul { list-style: none; }
 .nav-cta::after { display: none !important; }
 .nav-cta:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow); }
 .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 5px; }
-.menu-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all var(--transition-normal); }
+.menu-toggle span { display: block; width: 24px; height: 2px; background: var(--dark); border-radius: 2px; transition: all var(--transition-normal); }
 
 /* ===== Hero ===== */
 .hero {
